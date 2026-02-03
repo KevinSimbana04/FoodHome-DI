@@ -1,7 +1,7 @@
 
 import HeaderLanding from "../components/headerlading";
 import Footer from "../components/footer";
-import Despensa from "../assets/img/Des.jpg";
+import Despensa from "../assets/img/des.jpg";
 import Banner1 from "../assets/img/banner.jpg";
 import CasaIcon from "../assets/Iconos/casa.png";
 import CrecimientoIcon from "../assets/Iconos/crecimiento-economico.png";
@@ -14,15 +14,14 @@ function Landing() {
             <div>
                 <HeaderLanding />
 
-                {/* Hero Section */}
+
                 <section
                     className="relative min-h-screen flex items-center justify-center text-center bg-cover bg-center"
                     style={{ backgroundImage: `url(${Banner1})` }}
                 >
-                    {/* Overlay */}
+
                     <div className="absolute inset-0 bg-black/40 z-0"></div>
 
-                    {/* Content */}
                     <div className="relative z-10 text-white px-4">
                         <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
                             Gestiona tu comida, <br /> ahorra dinero
