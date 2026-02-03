@@ -1,6 +1,6 @@
-import facebook from "../assets/iconos/facebook(1).png";
-import instagram from "../assets/iconos/instagram.png";
-import x from "../assets/iconos/medios-de-comunicacion-social.png";
+import facebook from "../assets/Iconos/facebook(1).png";
+import instagram from "../assets/Iconos/instagram.png";
+import x from "../assets/Iconos/medios-de-comunicacion-social.png";
 
 
 function Footer() {
