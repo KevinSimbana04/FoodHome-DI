@@ -1,6 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { registrarUsuario } from "../services/authServices";
+import Fondo from "../assets/img/fondo.jpg";
+
 
 function Register() {
     const [formData, setFormData] = useState({
@@ -35,9 +37,9 @@ function Register() {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-50">
-            <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-md">
-                <h2 className="text-2xl font-bold text-center text-green-700 mb-6">Crear Cuenta Smart Pantry</h2>
+        <div className="min-h-screen flex items-center justify-center bg-gray-50 bg-cover bg-center" style={{ backgroundImage: `url(${Fondo})` }}>
+            <div className="max-w-md w-full bg-white p-6 rounded-lg shadow-md relative">
+                <h2 className="text-2xl font-bold text-center text-[#1FAF97] mb-6">Crear Cuenta en FoodHome</h2>
 
                 {error && <p className="text-red-500 text-center mb-4">{error}</p>}
 
@@ -50,43 +52,43 @@ function Register() {
                             type="text"
                             name="fullName"
                             placeholder="Ej. María Pérez"
-                            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1FAF97]"
                             onChange={handleChange}
                             required
                         />
                     </div>
 
-                    {/* Email */}
+                    {/* Correo Electrónico */}
                     <div>
                         <label className="block text-gray-700 text-sm font-bold mb-2">Correo Electrónico</label>
                         <input
                             type="email"
                             name="email"
-                            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1FAF97]"
                             onChange={handleChange}
                             required
                         />
                     </div>
 
-                    {/* Password */}
+                    {/* Contraseña */}
                     <div>
                         <label className="block text-gray-700 text-sm font-bold mb-2">Contraseña</label>
                         <input
                             type="password"
                             name="password"
-                            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1FAF97]"
                             onChange={handleChange}
                             required
                         />
                     </div>
 
-                    {/* Confirm Password */}
+                    {/* Confirmar Contraseña */}
                     <div>
                         <label className="block text-gray-700 text-sm font-bold mb-2">Confirmar Contraseña</label>
                         <input
                             type="password"
                             name="confirmPassword"
-                            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1FAF97]"
                             onChange={handleChange}
                             required
                         />
@@ -94,7 +96,7 @@ function Register() {
 
                     <button
                         type="submit"
-                        className="w-full bg-green-600 text-white font-bold py-2 px-4 rounded hover:bg-green-700 transition duration-300 disabled:bg-gray-400"
+                        className="w-full bg-[#1FAF97] text-white font-bold py-2 px-4 rounded hover:bg-[#178b78] transition duration-300 disabled:bg-gray-400"
                     >
                         Registrate
                     </button>
@@ -102,7 +104,7 @@ function Register() {
 
                 <div className="mt-4 text-center">
                     <p className="text-sm text-gray-600">
-                        ¿Ya tienes cuenta? <Link to="/login" className="text-green-600 font-bold hover:underline">Inicia Sesión</Link>
+                        ¿Ya tienes cuenta? <Link to="/login" className="text-[#1FAF97] font-bold hover:underline">Inicia Sesión</Link>
                     </p>
                 </div>
             </div>
